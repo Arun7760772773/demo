@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+# Several lines of code are omitted here.
+spec:
+  template:
+    spec:
+      containers:
+      - image: IMAGE_URL
+        ports:
+        - name: h2c
+          containerPort: 8080
+Introductory statements
